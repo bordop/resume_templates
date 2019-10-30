@@ -1,0 +1,53 @@
+Gui, Add, Button, x22 y10 w120 h20 , Title 
+Gui, Add, Button, x22 y30 w120 h20 , Company
+Gui, Add, Button, x22 y50 w120 h20 , Responsibilities
+Gui, Add, Button, x22 y70 w120 h20 , Supervisor
+Gui, Add, Button, x22 y90 w120 h20 , SupervisorEmail
+Gui, Add, Button, x22 y110 w120 h20 , SupervisorPhone
+Gui, Add, Button, x22 y110 w120 h20 , CompanySite
+Gui, Show, x50 y50, 
+Return
+
+ButtonTitle:
+Send, !{Esc}
+Send,
+return
+
+ButtonCompany:
+Send, !{Esc}
+Send,
+return
+
+ButtonResponsibilities:
+Send, !{Esc}
+SendInput, 
+(
+
+)
+
+ButtonSupervisor:
+Send, !{Esc}
+Send,
+return
+
+ButtonSupervisorEmail:
+Send, !{Esc}
+Send,
+return
+
+ButtonSupervisorPhone:
+Send, !{Esc}
+Send,
+return
+
+ButtonCompanySite:
+Send, !{Esc}
+Send,
+return
+
+
+
+return
+
+GuiClose:
+ExitApp
