@@ -1,0 +1,18 @@
+#NoEnv
+#SingleInstance, Force
+SetWorkingDir %A_ScriptDir%
+Menu PositionsMenu, Add, Position1, !^1
+Menu PositionsMenu, Add, Position2, !^2
+Menu PositionsMenu, Add, References, !^8
+Menu PositionsMenu, Add, CloseApp, !^9
+
+#j::Menu, PositionsMenu, Show
+Return
+
+!^1::run %A_ScriptDir%\position1.ahk
+Return
+!^2::run %A_ScriptDir%\position2.ahk
+Return
+
+!^9::ExitApp
+Return
